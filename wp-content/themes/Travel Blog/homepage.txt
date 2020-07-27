@@ -1,0 +1,447 @@
+<?php get_header();
+
+
+$count = 0;
+
+if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+
+ if ($count == 0) : 
+
+get_template_part( 'content', get_post_format() );
+
+endif; 
+if ( $count == 1 ) : ?>
+
+<div class="top-post post">
+    <a href="single.html" class="post-link">
+        <h3>
+            <?php the_title(); ?>
+        </h3>
+        <div class="view-container"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/view-icon.png" alt="view" class="view posts-view"></div>
+    </a>
+</div>
+                    <?php               
+                    endif;
+            ?>
+                 
+                <?php if ( $count >= 2 ) : ?>
+
+<div class="post">
+    <a href="single.html" class="post-link">
+        <h3>
+            <?php the_title(); ?>
+        </h3>
+        <div class="view-container"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/view-icon.png" alt="view" class="view posts-view"></div>
+    </a>
+</div>
+                    <?php               
+                    endif;
+                    if ( $count == 5 ) :
+                    endif;
+                    $count++; 
+                    endwhile;  
+                    endif; 
+                    ?>
+</section>
+</div>
+    
+<div class="section-footer">
+    <a href="all-posts.html" class="footer-link">
+        <p>View All</p>
+    </a>
+</div>
+</div>
+
+
+
+<div class="section-grid" id="me">
+
+    <div class="section-heading">
+        <h2>Me</h2>
+    </div>
+    <div class="section-container">
+        <section>
+            <div class="grid-container me-container">
+                <img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/me.jpg" alt="Me!" class="me-jpg">
+                <div class="me-description"><strong>
+                        <p>
+                            <?php echo get_option( 'about_me' ); ?>
+                        </p>
+                    </strong>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="section-footer">
+        <a href="<?php echo get_option('facebook'); ?>" target="_blank"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/facebook-icon.png" class="tray-icon"></a>
+        <a href="<?php echo get_option('instagram'); ?>" target="_blank"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/insta-icon.png" class="tray-icon"></a>
+        <a href="<?php echo get_option('twitter'); ?>" target="_blank"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/twitter-icon.png" class="tray-icon"></a>
+    </div>
+</div>
+
+
+<div class="section-grid" id="photos">
+
+    <div class="section-heading">
+        <h2>Photos</h2>
+    </div>
+    <div class="section-container photo-container">
+        <section class="photos">
+            <div id="tinderslide">
+                <ul>
+                    <li class="pane1">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Septembro-Augusto/20180819113643.JPG"></div>
+                        <div>
+                            <h4>Christ The Redeemer</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane2">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Octobro/42161637_2052737058097875_3020405441327792128_n.jpg"></div>
+                        <div>
+                            <h4>Volleyball</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane3">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Novembro/IMG-20181104-WA0005.jpg"></div>
+                        <div>
+                            <h4>Me n Maddy</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane4">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Fevreiro/IMG_5716.JPG"></div>
+                        <div>
+                            <h4>Caranaval Prep</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane5">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Fevreiro/IMG_5714.JPG"></div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane1">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Septembro-Augusto/20180819113643.JPG"></div>
+                        <div>
+                            <h4>Christ The Redeemer</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane2">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Octobro/42161637_2052737058097875_3020405441327792128_n.jpg"></div>
+                        <div>
+                            <h4>Volleyball</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane3">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Novembro/IMG-20181104-WA0005.jpg"></div>
+                        <div>
+                            <h4>Me n Maddy</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane4">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Fevreiro/IMG_5716.JPG"></div>
+                        <div>
+                            <h4>Caranaval Prep</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane5">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Fevreiro/IMG_5714.JPG"></div>
+                        <div>
+                            <h4>My Guy</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane1">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Septembro-Augusto/20180819113643.JPG"></div>
+                        <div>
+                            <h4>Christ The Redeemer</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane2">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Octobro/42161637_2052737058097875_3020405441327792128_n.jpg"></div>
+                        <div>
+                            <h4>Volleyball</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane3">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Novembro/IMG-20181104-WA0005.jpg"></div>
+                        <div>
+                            <h4>Me n Maddy</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane4">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Fevreiro/IMG_5716.JPG"></div>
+                        <div>
+                            <h4>Caranaval Prep</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane5">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Fevreiro/IMG_5714.JPG"></div>
+                        <div>
+                            <h4>My Guy</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane1">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Septembro-Augusto/20180819113643.JPG"></div>
+                        <div>
+                            <h4>Christ The Redeemer</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane2">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Octobro/42161637_2052737058097875_3020405441327792128_n.jpg"></div>
+                        <div>
+                            <h4>Volleyball</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane3">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Novembro/IMG-20181104-WA0005.jpg"></div>
+                        <div>
+                            <h4>Me n Maddy</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane4">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Fevreiro/IMG_5716.JPG"></div>
+                        <div>
+                            <h4>Caranaval Prep</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane5">
+                        <div class="img"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/Photos/Fevreiro/IMG_5714.JPG"></div>
+                        <div>
+                            <h4>My Guy</h4>
+                        </div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+    </div>
+
+
+    <div class="actions section-footer">
+        <a href="#" class="dislike"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/dislike-icon.png" class="icon"></a>
+        <a href="photos.html" class="view-all">
+            <p>View All</p>
+        </a>
+        <a href="#" class="like"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/like-icon.png" class="icon"></a>
+    </div>
+</div>
+
+
+<div class="section-grid" id="currently">
+    <div class="section-heading">
+        <h2>Currently</h2>
+    </div>
+    <div class="section-container">
+        <section>
+            <div class="grid-container">
+                <div class="media-type show" id="book">
+                    <div class="media-heading">
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/book-icon.png" alt="book-icon" class="icon">
+                        <h4>Reading</h4>
+                    </div>
+
+                    <img src="<?php echo get_option( 'book_img' ); ?>" alt="title" class="media-image">
+
+                    <table class="table">
+                        <tr>
+                            <th>Title :</th>
+                            <td>
+                                <?php echo get_option( 'book_title' ); ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Author :</th>
+                            <td>
+                                <?php echo get_option( 'book_author' ); ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Genre :</th>
+                            <td>
+                                <?php echo get_option( 'book_genre' ); ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Rating :</th>
+                            <td>
+                                <?php echo get_option( 'book_rating' ); ?>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="media-type" id="music">
+                    <div class="media-heading">
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/music-icon.png" alt="music-icon" class="icon">
+                        <h4>Listening</h4>
+
+                    </div>
+
+                    <img>
+
+                    <table class="table">
+                        <tr>
+                            <th>Title :</th>
+                            <td>
+                                <?php echo get_option( 'music_title' ); ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Artist :</th>
+                            <td>
+                                <?php echo get_option( 'music_artist' ); ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Genre :</th>
+                            <td>
+                                <?php echo get_option( 'music_genre' ); ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Rating :</th>
+                            <td>
+                                <?php echo get_option( 'music_rating' ); ?>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="media-type" id="film">
+                    <div class="media-heading">
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/film-icon.png" alt="film-icon" class="icon">
+                        <h4>Watching (Film)</h4>
+
+                    </div>
+
+                    <img>
+
+                    <table class="table">
+                        <tr>
+                            <th>Title :</th>
+                            <td>
+                                <?php echo get_option( 'film_title' ); ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Director :</th>
+                            <td>
+                                <?php echo get_option( 'film_director' ); ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Genre :</th>
+                            <td>
+                                <?php echo get_option( 'film_genre' ); ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Rating :</th>
+                            <td>
+                                <?php echo get_option( 'film_rating' ); ?>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <div class="media-type" id="series">
+                    <div class="media-heading">
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/tv-icon.png" alt="tv-icon" class="icon">
+                        <h4>Watching
+                            (Series)</h4>
+                    </div>
+
+                    <img>
+
+                    <table class="table">
+                        <tr>
+                            <th>Title :</th>
+                            <td>
+                                <?php echo get_option( 'series_title' ); ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Platform :</th>
+                            <td>
+                                <?php echo get_option( 'series_where' ); ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Genre :</th>
+                            <td>
+                                <?php echo get_option( 'series_genre' ); ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Rating :</th>
+                            <td>
+                                <?php echo get_option( 'series_rating' ); ?>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="section-footer media-footer">
+        <a class="icon-container"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/film-icon.png" alt="film-icon" id="tray-film" data="film" class="tray-icon media-icon"></a>
+        <a class="icon-container"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/music-icon.png" alt="music-icon" id="tray-music" data="music" class="tray-icon media-icon"></a>
+        <a class="icon-container"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/tv-icon.png" alt="tv-icon" id="tray-series" data="series" class="tray-icon media-icon"></a>
+        <a class="icon-container"><img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/book-icon.png" alt="book-icon" id="tray-book" data="book" class="tray-icon media-icon"></a>
+    </div>
+</div>
+
+<div class="section-grid" id="been">
+    <div class="section-heading">
+        <h2>Been</h2>
+    </div>
+    <div class="section-container">
+        <section>
+            <img src="<?php echo get_bloginfo('template_directory'); ?>/pictures/been.jpg" alt="been-map" class="been">
+        </section>
+    </div>
+    <div class="section-footer">
+        <a href="single.html" class="footer-link">
+            <p>Download App</p>
+        </a></div>
+</div>
+
+
+<?php get_footer(); ?>

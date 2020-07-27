@@ -1,0 +1,79 @@
+# Translation of Plugins - Attachment Taxonomies - Stable (latest release) in English (UK)
+# This file is distributed under the same license as the Plugins - Attachment Taxonomies - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-08-11 08:31:01+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: en_GB\n"
+"Project-Id-Version: Plugins - Attachment Taxonomies - Stable (latest release)\n"
+
+#: inc/Taxonomy_Default_Terms.php:193
+msgid "Attachment Tag"
+msgstr "Attachment Tag"
+
+#: inc/Taxonomy_Default_Terms.php:189
+msgid "Attachment Category"
+msgstr "Attachment Category"
+
+#: inc/Taxonomy_Default_Terms.php:174
+msgctxt "default term dropdown"
+msgid "None"
+msgstr "None"
+
+#. translators: %s: taxonomy label
+#: inc/Taxonomy_Default_Terms.php:140
+msgctxt "settings field title"
+msgid "Default %s"
+msgstr "Default %s"
+
+#. translators: %s: taxonomy label
+#: inc/Taxonomy_Default_Terms.php:114
+msgctxt "REST API description"
+msgid "Default %s."
+msgstr "Default %s."
+
+#. translators: 1: function name, 2: version number
+#: attachment-taxonomies.php:313
+msgid "%1$s was called with an argument that is <strong>deprecated</strong> since Attachment Taxonomies version %2$s with no alternative available."
+msgstr "%1$s was called with an argument that is <strong>deprecated</strong> since Attachment Taxonomies version %2$s with no alternative available."
+
+#. translators: 1: function name, 2: version number, 3: message
+#: attachment-taxonomies.php:310
+msgid "%1$s was called with an argument that is <strong>deprecated</strong> since Attachment Taxonomies version %2$s! %3$s"
+msgstr "%1$s was called with an argument that is <strong>deprecated</strong> since Attachment Taxonomies version %2$s! %3$s"
+
+#. Tags of the plugin/theme
+msgid "attachment, media, taxonomy, categories, tags"
+msgstr "attachment, media, taxonomy, categories, tags"
+
+#. Author URI of the plugin/theme
+msgid "https://leaves-and-love.net"
+msgstr "https://leaves-and-love.net"
+
+#. Author of the plugin/theme
+msgid "Felix Arntz"
+msgstr "Felix Arntz"
+
+#. Description of the plugin/theme
+msgid "This plugin adds categories and tags to the WordPress media library - lightweight and developer-friendly."
+msgstr "This plugin adds categories and tags to the WordPress media library - lightweight and developer-friendly."
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/attachment-taxonomies/"
+msgstr "https://en-gb.wordpress.org/plugins/attachment-taxonomies/"
+
+#. Plugin Name of the plugin/theme
+msgid "Attachment Taxonomies"
+msgstr "Attachment Taxonomies"
+
+#: inc/Taxonomies_Core.php:308
+msgid "Filter by Tag"
+msgstr "Filter by Tag"
+
+#: inc/Taxonomies_Core.php:306
+msgid "Filter by Category"
+msgstr "Filter by Category"
